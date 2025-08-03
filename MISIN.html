@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Dark theme custom CSS -->
+    <link rel="stylesheet" href="MISINCSS.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top dark-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.imgur.com/8Km9tLL.png" style="height:30px;display:inline;">
+                    Uniglobe
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Suyogya Gyawali</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid dashboard-container-dark">
+        <div class="row">
+            <!-- Main Content Centered -->
+            <div class="col-md-9 main-content-dark">
+                <!-- Profile Card at the Top -->
+                <div class="my-profile-card-dark">
+                    <img class="my-profile-photo-dark" src="https://via.placeholder.com/100" alt="Profile Photo">
+                    <div class="my-profile-info-dark">
+                        <div><b>Name:</b> <span>Suyogya Gyawali</span></div>
+                        <div><b>Grade:</b> <span>XI Science</span></div>
+                        <div><b>Phone No:</b> <span>9800000000</span></div>
+                        <div><b>Email:</b> <span>suyogya@email.com</span></div>
+                        <div><b>Symbol No:</b> <span>UG2025SCI001</span></div>
+                    </div>
+                </div>
+                <!-- Calendar Large and Centered -->
+                <div class="calendar-panel-dark">
+                    <div class="calendar-header-dark"><b>August 2025</b></div>
+                    <div class="calendar-body-dark">
+                        <table class="table table-bordered calendar-table-dark">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+                                    <th>Thu</th><th>Fri</th><th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td><td></td><td></td><td></td><td></td><td><div class="day-dark">1</div></td><td><div class="day-dark">2</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="today-dark"><div class="day-dark">3</div><div class="event-dark">Hackathon</div></td>
+                                    <td><div class="day-dark">4</div></td>
+                                    <td><div class="day-dark">5</div><div class="event-dark">Chemistry Quiz</div></td>
+                                    <td><div class="day-dark">6</div></td>
+                                    <td><div class="day-dark">7</div></td>
+                                    <td><div class="day-dark">8</div></td>
+                                    <td><div class="day-dark">9</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="day-dark">10</div><div class="event-dark">English Ch.1 Due</div></td>
+                                    <td><div class="day-dark">11</div></td>
+                                    <td><div class="day-dark">12</div></td>
+                                    <td><div class="day-dark">13</div></td>
+                                    <td><div class="day-dark">14</div></td>
+                                    <td><div class="day-dark">15</div><div class="event-dark">Poetry</div></td>
+                                    <td><div class="day-dark">16</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="day-dark">17</div></td><td><div class="day-dark">18</div></td>
+                                    <td><div class="day-dark">19</div></td><td><div class="day-dark">20</div></td>
+                                    <td><div class="day-dark">21</div></td><td><div class="day-dark">22</div></td>
+                                    <td><div class="day-dark">23</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="day-dark">24</div></td><td><div class="day-dark">25</div></td>
+                                    <td><div class="day-dark">26</div></td><td><div class="day-dark">27</div></td>
+                                    <td><div class="day-dark">28</div></td><td><div class="day-dark">29</div></td>
+                                    <td><div class="day-dark">30</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="day-dark">31</div></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Notice Board Below Calendar -->
+                <div class="panel notice-board-dark">
+                    <div class="panel-heading notice-board-header-dark"><b>Notice Board</b></div>
+                    <div class="panel-body notice-board-body-dark">
+                        <p>No new notices.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar on the Right -->
+            <div class="col-md-3 sidebar-dark">
+                <ul class="nav nav-pills nav-stacked nav-dark">
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Attendance</a></li>
+                    <li><a href="#">Leave</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Assignment Monthly Report</a></li>
+                    <li><a href="#">ECA</a></li>
+                    <li><a href="#">Exam Result</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                </ul>
+                <div class="panel panel-info panel-dark">
+                    <div class="panel-heading panel-dark-heading"><b>New Assignment</b></div>
+                    <div class="panel-body panel-dark-body">
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>English – Chapter 1</strong><br>
+                                Submission Date: <span class="text-danger">August 10, 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default subject-teacher panel-dark">
+                    <div class="panel-heading panel-dark-heading"><span class="glyphicon glyphicon-comment"></span> My Subject Teacher</div>
+                    <div class="panel-body panel-dark-body">
+                        <div>
+                            <b>Com. Nepali</b><br>
+                            <a href="mailto:ypdbhandari@uniglobecollege.edu.np">Mr. Yadav Prasad Bhandari -YB</a><br>
+                            ypdbhandari@uniglobecollege.edu.np<br>
+                            9841595421
+                        </div>
+                        <hr>
+                        <div>
+                            <b>Com. English</b><br>
+                            <a href="#">Mr. Ganesh Raj Pandey</a><br>
+                            ganeshpandey<br>
+                            9841306983
+                        </div>
+                        <hr>
+                        <div>
+                            <b>Chemistry</b><br>
+                            <a href="mailto:ritaupreti86@uniglobecollege.edu.np">Mrs. Rita Upreti -RU</a><br>
+                            ritaupreti86@uniglobecollege.edu.np<br>
+                            9860000299
+                        </div>
+                        <hr>
+                        <div>
+                            <b>Chemistry</b><br>
+                            <a href="#">Mr. Prakash Tiwari</a><br>
+                            prakashtiwari<br>
+                            9841121475
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

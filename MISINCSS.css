@@ -1,0 +1,197 @@
+body {
+    background: #181c24;
+    color: #e3e6ed;
+    font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.dark-navbar {
+    background: #23283b !important;
+    border: none;
+}
+.dashboard-container-dark {
+    margin-top: 70px;
+    min-height: 100vh;
+}
+.main-content-dark {
+    padding: 32px 40px 32px 40px;
+}
+.my-profile-card-dark {
+    background: #23283b;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0004;
+    padding: 32px 36px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.my-profile-photo-dark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3a86ff;
+    box-shadow: 0 2px 12px #3a86ff44;
+}
+.my-profile-info-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.my-profile-info-dark b {
+    color: #ffbe0b;
+    font-size: 1.08em;
+}
+.my-profile-info-dark span {
+    color: #e3e6ed;
+    font-size: 1.05em;
+}
+.calendar-panel-dark {
+    background: #23283b;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0004;
+    margin-bottom: 32px;
+}
+.calendar-header-dark {
+    background: #3a86ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25em;
+    border-radius: 18px 18px 0 0;
+    padding: 18px 0 18px 24px;
+    letter-spacing: 1px;
+}
+.calendar-body-dark {
+    padding: 24px 18px 18px 18px;
+}
+.calendar-table-dark {
+    width: 100%;
+    font-size: 1.22em;
+    background: transparent;
+    color: #e3e6ed;
+}
+.calendar-table-dark th, .calendar-table-dark td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.08em;
+    padding: 18px 0;
+    background: #23283b;
+    border: 1px solid #31374a;
+}
+.day-dark {
+    background: #23283b;
+    color: #e3e6ed;
+    border-radius: 8px;
+    padding: 6px 0;
+    font-weight: 500;
+}
+.today-dark {
+    background: #3a86ff !important;
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.event-dark {
+    background: #ffbe0b;
+    color: #23283b;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 0.95em;
+    margin-top: 4px;
+    display: inline-block;
+    font-weight: 600;
+}
+.notice-board-dark {
+    background: #23283b;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0004;
+    margin-bottom: 32px;
+}
+.notice-board-header-dark {
+    background: #8338ec;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15em;
+    border-radius: 18px 18px 0 0;
+    padding: 14px 0 14px 24px;
+}
+.notice-board-body-dark {
+    color: #e3e6ed;
+    padding: 18px 24px;
+}
+.sidebar-dark {
+    background: #202432;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0004;
+    padding: 36px 18px 18px 18px;
+    min-height: 90vh;
+    margin-top: 24px;
+}
+.nav-dark > li > a {
+    color: #b0b7c3 !important;
+    font-weight: 600;
+    font-size: 1.08em;
+    border-radius: 8px;
+    margin: 4px 0;
+    transition: background 0.2s, color 0.2s;
+    text-align: left;
+}
+.nav-dark > li.active > a,
+.nav-dark > li > a:hover {
+    background: #3a86ff !important;
+    color: #fff !important;
+}
+.panel-dark {
+    background: #23283b !important;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0004;
+    border: none;
+    margin-bottom: 24px;
+}
+.panel-dark-heading {
+    background: #3a86ff !important;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.08em;
+    border-radius: 18px 18px 0 0;
+    letter-spacing: 1px;
+}
+.panel-dark-body {
+    color: #e3e6ed;
+    padding: 18px 18px;
+}
+.subject-teacher b {
+    color: #ffbe0b;
+}
+.subject-teacher a {
+    color: #3a86ff;
+    font-weight: 600;
+}
+.subject-teacher hr {
+    margin: 10px 0;
+    border-color: #31374a;
+}
+@media (max-width: 991px) {
+    .main-content-dark, .sidebar-dark {
+        padding: 18px 8px;
+    }
+    .my-profile-card-dark {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 12px 12px 12px;
+        gap: 16px;
+    }
+    .my-profile-photo-dark {
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 767px) {
+    .main-content-dark, .sidebar-dark {
+        padding: 8px 2vw;
+    }
+    .my-profile-card-dark {
+        padding: 12px 4vw;
+    }
+    .calendar-panel-dark, .notice-board-dark {
+        padding: 0 2vw;
+    }
+}
