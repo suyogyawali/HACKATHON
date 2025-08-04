@@ -1,0 +1,121 @@
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4fa;
+  margin: 0;
+  padding: 0 20px;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #004aad;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  margin: 0;
+  background: #eaf1ff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #cce0ff;
+  color: #003580;
+}
+
+section {
+  background: #fff;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #eaf1ff;
+  color: #004aad;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #003580;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

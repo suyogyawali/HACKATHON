@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Leave Record</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Modern fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Leave.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h1 class="main-title">Student Leave Record</h1>
+            <div class="student-profile">
+                <img src="pfp.png" alt="Aayush Thapa" class="profile-photo">
+                <div class="profile-info">
+                    <span class="profile-name">Aayush Thapa</span>
+                </div>
+            </div>
+        </div>
+        <div class="leave-flex">
+            <!-- New Leave Request Section -->
+            <div class="new-request-box">
+    <h2 class="request-title">New Leave Request</h2>
+    <form class="leave-form" action="mailto:suyogyagyawali81@uniglobecollege.edu.np" method="POST" enctype="text/plain">
+        <label for="leave-date">Date:</label>
+        <input type="date" id="leave-date" name="Date" required>
+
+        <label for="leave-reason">Reason:</label>
+        <input type="text" id="leave-reason" name="Reason" placeholder="Reason for leave" required>
+
+        <label for="leave-letter">Leave Letter:</label>
+        <textarea id="leave-letter" name="Leave Letter" rows="5" placeholder="Write your leave letter here..." required></textarea>
+
+        <button type="submit" class="send-btn">Send to Department</button>
+    </form>
+</div>
+            
+            <!-- Leave History Section -->
+            <div class="history-box">
+                <div class="panel-heading">
+                    <span class="icon">&#128197;</span> Leave History
+                </div>
+                <div class="panel-body">
+                    <table class="leave-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-08-01</td>
+                                <td>Medical</td>
+                                <td class="approved">Approved</td>
+                            </tr>
+                            <tr>
+                                <td>2025-07-15</td>
+                                <td>Family Emergency</td>
+                                <td class="pending">Pending</td>
+                            </tr>
+                            <tr>
+                                <td>2025-06-20</td>
+                                <td>Personal</td>
+                                <td class="rejected">Rejected</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+document.getElementById("leaveForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    const date = document.getElementById("leave-date").value;
+    const reason = document.getElementById("leave-reason").value;
+    const letter = document.getElementById("leave-letter").value;
+
+    const subject = encodeURIComponent("Leave Request: " + reason);
+    const body = encodeURIComponent(
+        `Date of Leave: ${date}\n\nReason: ${reason}\n\nLeave Letter:\n${letter}`
+    );
+
+    const mailtoLink = `mailto:admin@example.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+});
+</script>
+</body>
+</html>
